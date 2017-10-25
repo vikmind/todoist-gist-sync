@@ -1,7 +1,7 @@
 {
   "name": "todoist-gist-sync",
-  "version": "0.0.5",
-  "description": "Microservice to keep logs of completed Todoist tasks in GithHub gist",
+  "version": "1.0.0",
+  "description": "Microservice to keep logs of completed Todoist tasks in GitHub gist",
   "repository": "vikmind/todoist-gist-sync",
   "main": "index.js",
   "scripts": {
