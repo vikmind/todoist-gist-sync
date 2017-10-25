@@ -1,6 +1,6 @@
 # todoist-gist-sync
 
-Microservice to keep logs of completed Todoist tasks in GitHub gist
+Microservice to keep logs of completed Todoist tasks in GitHub gist through IFTTT hook
 
 ## Configuration
 
@@ -9,9 +9,9 @@ Microservice to keep logs of completed Todoist tasks in GitHub gist
 1. ``HOOK_URL`` is the path to make requests
 1. ``HOOK_KEY`` is another checking that goes in request body, see below
 1. ``GITHUB_KEY`` GitHub token for [Gist access](https://github.com/settings/tokens/new)
-1. ``GIST_ID`` Create Gist for storage manually, because service intended to not have own memory to store created gist id.
+1. ``GIST_ID`` Create Gist for storage manually, because service intended to not have own memory to store created gist ID
 
-### IFTTT hook configuration
+### [IFTTT applet configuration](https://ifttt.com/create)
 
 #### 1. Event
 
@@ -52,5 +52,5 @@ Next steps:
 
 1. Install [now client](https://zeit.co/download)
 1. Authorize it, see [guide](https://zeit.co/now#get-started) for details
-1. Deploy with ``now``
-1. Use URL in IFTTT hook configuration
+1. Deploy with ``now`` command
+1. Use URL in IFTTT applet configuration

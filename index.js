@@ -5,7 +5,7 @@ const taskToString = require('./taskToString');
 
 const gh = require('./createGithubWrapper')({
   GitHub: require('github-api'),
-  token: process.env.GITHUB_KEY,
+  token:  process.env.GITHUB_KEY,
   gistId: process.env.GIST_ID,
 });
 
@@ -21,12 +21,11 @@ module.exports = async function(req, res){
   let error = null;
   const data = await json(req).catch(e => error = e);
   if (error) return 'Wrong json';
+
   if (data.key !== process.env.HOOK_KEY) return 'Nope';
 
   const result = await gh.append(taskToString(data));
-  if (result === 'ok') {
-    return 'Yay!';
-  }
+  if (result === 'ok') return 'Yay!';
 
   return 'Nope';
 }
