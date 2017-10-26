@@ -54,3 +54,5 @@ Next steps:
 1. Authorize it, see [guide](https://zeit.co/now#get-started) for details
 1. Deploy with ``now`` command
 1. Use URL in IFTTT applet configuration
+
+[How to use it for geeky task logging](https://github.com/vikmind/notes-template)
