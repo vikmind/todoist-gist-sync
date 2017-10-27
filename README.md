@@ -42,8 +42,9 @@ Create file ``now.json`` and fill it with environment variables, like
   "env": {
     "HOOK_URL": "hello_world_of_microservices",
     "HOOK_KEY": "another_secret_string",
-    "GITHUB_KEY": "Your GitHub acesss key",
-    "GIST_ID": "Your Gist ID"
+    "GITHUB_KEY": "Your GitHub accesss key",
+    "GIST_ID": "Your Gist ID",
+    "PORT": 3000
   }
 }
 ```
@@ -54,5 +55,15 @@ Next steps:
 1. Authorize it, see [guide](https://zeit.co/now#get-started) for details
 1. Deploy with ``now`` command
 1. Use URL in IFTTT applet configuration
+
+### Deployment on [Heroku](https://heroku.com/)
+
+1. Install [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
+1. Create project ``heroku create <your-name>``
+1. Fill environment variables on project's dashboard (see [Environment variables](#environment-variables))
+1. ``git push heroku master``
+1. Use URL in IFTTT applet configuration
+
+### Usage
 
 [How to use it for geeky task logging](https://github.com/vikmind/notes-template)
