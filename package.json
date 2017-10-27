@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "micro-dev": "^1.3.0"
+  },
+  "engines": {
+    "node": "8.4.0"
   }
 }
