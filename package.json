@@ -19,5 +19,10 @@
   },
   "devDependencies": {
     "micro-dev": "^1.3.0"
+  },
+  "now": {
+    "engines": {
+      "node": "8.6.x"
+    }
   }
 }
