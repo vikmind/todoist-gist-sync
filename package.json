@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "micro",
+    "start": "node server.js",
     "dev": "micro-dev"
   },
   "author": "Viktor Marchenko (viktor.marchenko@gmail.com)",
@@ -19,10 +19,5 @@
   },
   "devDependencies": {
     "micro-dev": "^1.3.0"
-  },
-  "now": {
-    "engines": {
-      "node": "8.6.x"
-    }
   }
 }

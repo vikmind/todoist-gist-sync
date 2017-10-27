@@ -1,4 +1,8 @@
-module.exports = function({ GitHub, token, gistId }) {
+module.exports = function({
+  GitHub,
+  token,
+  gistId
+}) {
   const gh = new GitHub({
     token,
   });
