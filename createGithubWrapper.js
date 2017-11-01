@@ -1,17 +1,13 @@
 module.exports = function({
   GitHub,
+  dateToFilename,
   token,
-  gistId
+  gistId,
 }) {
   const gh = new GitHub({
     token,
   });
   const gistObject = gh.getGist(gistId);
-  // 25.10.2017.txt
-  const todayFilenameFn = () => {
-    const date = new Date();
-    return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}.txt`;
-  };
 
   return {
     append: async function(string) {
@@ -19,7 +15,7 @@ module.exports = function({
       const files = {
         ...gist.data.files,
       };
-      const today = todayFilenameFn();
+      const today = dateToFilename(new Date());
       if (!!files[today]) {
         files[today].content = `${files[today].content}\n${string}`;
       } else {
